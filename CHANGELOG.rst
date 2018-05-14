@@ -2,6 +2,21 @@
 Changelog for package robotnik_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.3 (2018-05-14)
+-----------
+* adding mantaineirs for the package
+* added SetElevator action
+* completing alarms
+* removed set_kuka_pose.srv
+* Cartesian euler pose msg and srv added
+* robotnik_msgs: adding string array
+* Kuka pose msg and set kuka pose srv added
+* added set_named_input to CMakeLists
+* msg changed to digital_inputs and digital_outputs
+* alarms with display number
+* Added named_input_output msg and srv
+* added GetBool service
+
 0.2.2 (2018-02-16)
 ------------------
 * added list of strings of active status word and flags
@@ -13,7 +28,6 @@ Changelog for package robotnik_msgs
 * adding I/O to motor status
 * renamed InverterState.msg to InverterStatus.msg
 * added InverterState message
-* Contributors: Marc Bosch-Jorge, RomanRobotnik, RomanRobotnik.es, asoriano1, jmapariciorobotnik, marbosjo
 
 0.2.1 (2016-07-12)
 ------------------
@@ -25,7 +39,6 @@ Changelog for package robotnik_msgs
 -----------
 * Adding new field for the Axis.msg
 * Adding msg State.msg
-* Merge branch 'master' of https://github.com/RobotnikAutomation/robotnik_msgs
 * Adding new msg State
 
 
@@ -35,4 +48,3 @@ Changelog for package robotnik_msgs
 * Fixing dependencies problems
 * Adding initial list of messages and services
 * Initial commit
-* Contributors: RobotnikRoman, Roman Navarro Garcia
