@@ -1,11 +1,13 @@
-# robot mode
-string AUTO=auto
-string MANUAL=manual
+# robot safety mode
+string SAFE=safe
+string OVERRIDABLE=overridable
 string EMERGENCY=emergency
 
-string robot_mode
-robotnik_msgs/LaserStatus laser_status
-bool is_charging
-
-bool manual_release
-bool bumper_override
+string safety_mode
+bool charging
+bool emergency_stop   # if e-stop is pressed
+bool safety_stop      # if system is stopped due to safety system
+bool safety_overrided # if safety system is overrided
+bool lasers_on_standby # if lasers don't have power
+robotnik_msgs/LaserMode lasers_mode
+robotnik_msgs/LaserStatus[] lasers_status
