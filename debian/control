@@ -1,0 +1,13 @@
+Source: ros-melodic-robotnik-msgs
+Section: misc
+Priority: optional
+Maintainer: Jose Gómez <jgomez@robotnik.es>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-actionlib-msgs, ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-message-generation, ros-melodic-std-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-robotnik-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-actionlib-msgs, ros-melodic-geometry-msgs, ros-melodic-message-runtime, ros-melodic-std-msgs
+Description: The robotnik_msgs package.
+ Common messages and services used by some Robotnik's packages.
