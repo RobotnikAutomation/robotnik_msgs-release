@@ -1,3 +1,26 @@
+## robotnik_msgs (melodic) - 1.12.0-1
+
+The packages in the `robotnik_msgs` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic robotnik_msgs --edit` on `Fri, 18 Sep 2020 14:41:35 -0000`
+
+The `robotnik_msgs` package was released.
+
+Version of package(s) in repository `robotnik_msgs`:
+
+- upstream repository: https://github.com/RobotnikAutomation/robotnik_msgs.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.12.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## robotnik_msgs (kinetic) - 0.2.5-0
 
 The packages in the `robotnik_msgs` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release robotnik_msgs --rosdistro kinetic` on `Thu, 24 Jan 2019 10:45:52 -0000`
