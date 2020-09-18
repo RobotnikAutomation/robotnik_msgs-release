@@ -4,7 +4,7 @@ project(robotnik_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs message_generation)
+find_package(catkin REQUIRED COMPONENTS actionlib_msgs std_msgs geometry_msgs message_generation)
 
 
 #######################################
@@ -27,6 +27,7 @@ add_message_files(DIRECTORY msg
     State.msg
     BatteryStatus.msg
     BatteryStatusStamped.msg
+    MotorHeadingOffset.msg
     MotorsStatusDifferential.msg
     InverterStatus.msg
     RobotnikMotorsStatus.msg
@@ -48,6 +49,12 @@ add_message_files(DIRECTORY msg
     BatteryDockingStatus.msg
     BatteryDockingStatusStamped.msg
     BoolArray.msg
+    MotorPID.msg
+    Pose2DArray.msg
+    Pose2DStamped.msg
+    ReturnMessage.msg
+    PresenceSensor.msg
+    PresenceSensorArray.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -79,6 +86,14 @@ add_service_files(
     ResetFromSubState.srv
     QueryAlarms.srv
     SetNamedDigitalOutput.srv
+    InsertTask.srv
+    SetMotorPID.srv
+    SetMotorMode.srv
+    SetBuzzer.srv
+    SetEncoderTurns.srv
+    GetMotorsHeadingOffset.srv
+    SetByte.srv
+    SetTransform.srv
 )
 
 add_action_files(
@@ -92,12 +107,12 @@ generate_messages(
 DEPENDENCIES
    actionlib_msgs
    std_msgs  # Or other packages containing msgs
+   geometry_msgs
 )
 
 catkin_package(CATKIN_DEPENDS
   actionlib_msgs
   message_runtime
   std_msgs
+  geometry_msgs
 )
-
-
